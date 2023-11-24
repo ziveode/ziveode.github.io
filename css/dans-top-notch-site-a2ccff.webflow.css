@@ -1358,6 +1358,10 @@
   .gradient-section {
     top: -55%;
   }
+
+  .lottie-animation-4 {
+    width: 87%;
+  }
 }
 
 @media screen and (min-width: 1920px) {
