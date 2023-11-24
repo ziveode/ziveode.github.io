@@ -1095,6 +1095,7 @@
 }
 
 .dot {
+  z-index: 5;
   width: 15px;
   height: 15px;
   grid-column-gap: 16px;
@@ -1109,32 +1110,33 @@
   align-items: center;
   display: flex;
   position: absolute;
-  top: -5px;
+  top: 70%;
   bottom: auto;
-  left: auto;
+  left: 0%;
   right: 0%;
 }
 
 .dot._1 {
-  position: relative;
-  top: -10px;
+  position: absolute;
+  top: 50%;
   right: auto;
 }
 
 .dot._2 {
-  position: relative;
-  top: -25px;
+  position: absolute;
+  top: 50%;
   left: 33%;
   right: auto;
 }
 
 .dot._3 {
-  top: -5px;
+  top: 50%;
   left: 66%;
   right: auto;
 }
 
 .dot._4 {
+  top: 50%;
   left: 99%;
   right: auto;
 }
@@ -1233,7 +1235,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .expectations-section {
@@ -1279,6 +1281,18 @@
 
 .steps-container {
   margin-top: 60px;
+}
+
+.dot-wrapper {
+  width: 77%;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.timeline-wrapper {
+  width: 100%;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1789,26 +1803,26 @@
     flex-direction: row;
     position: absolute;
     top: 0;
-    left: -5px;
+    left: -7.5px;
   }
 
   .dot._2 {
     flex-direction: row;
     position: absolute;
-    top: 25%;
-    left: -5px;
+    top: 30%;
+    left: -7.5px;
   }
 
   .dot._3 {
     flex-direction: row;
-    top: 50%;
-    left: -5px;
+    top: 55%;
+    left: -7.5px;
   }
 
   .dot._4 {
     flex-direction: row;
-    top: 75%;
-    left: -5px;
+    top: 80%;
+    left: -7.5px;
   }
 
   .dot.advantages {
@@ -1830,7 +1844,7 @@
   }
 
   .line-wrapper {
-    width: 2%;
+    width: 5px;
     height: 100%;
   }
 
@@ -1855,6 +1869,22 @@
 
   .cell-2 {
     align-items: center;
+  }
+
+  .dot-wrapper {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 50%;
+    right: auto;
+  }
+
+  .timeline-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
 }
 
@@ -2010,20 +2040,27 @@
   }
 
   .step-section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  .dot._1 {
+    left: -5px;
   }
 
   .dot._2 {
-    top: 27%;
+    top: 30%;
+    left: -5px;
   }
 
   .dot._3 {
-    top: 52%;
+    top: 55%;
+    left: -5px;
   }
 
   .dot._4 {
-    top: 76%;
+    top: 80%;
+    left: -5px;
   }
 
   .dot.advantages {
@@ -2032,6 +2069,15 @@
 
   .advantages-container {
     margin-left: 0;
+  }
+
+  .line-wrapper {
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
   }
 
   .expect-image {
@@ -2048,6 +2094,21 @@
 
   .lottie-animation-4 {
     width: 100%;
+  }
+
+  .dot-wrapper {
+    width: 5px;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .timeline-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
 }
 
@@ -2124,10 +2185,6 @@
 
   #w-node-a9545289-4f73-a719-e680-5989098928d2-dc5ec8b8 {
     grid-area: span 4 / span 1 / span 4 / span 1;
-  }
-
-  #w-node-fcbe9a08-1965-db72-1e53-687777b00fc0-dc5ec8b8 {
-    order: 9999;
   }
 
   #w-node-_86fdb554-0baf-4980-1719-82a76fc08943-dc5ec8b8 {
