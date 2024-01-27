@@ -417,6 +417,10 @@ h1 {
   height: 200px;
 }
 
+.spacer.mobile {
+  display: none;
+}
+
 .heading-1 {
   z-index: 10;
   text-align: left;
@@ -1082,6 +1086,8 @@ h1 {
 
 @media screen and (max-width: 767px) {
   .section.hero {
+    height: 775px;
+    justify-content: flex-start;
     overflow: hidden;
   }
 
@@ -1175,6 +1181,15 @@ h1 {
   .spacer.mob-20px {
     height: 20px;
     display: block;
+  }
+
+  .spacer.mobile {
+    height: 100px;
+    display: block;
+  }
+
+  .spacer.mobile._175px {
+    height: 175px;
   }
 
   .heading-1 {
